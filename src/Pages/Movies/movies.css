@@ -1,0 +1,30 @@
+.movie_container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, auto);
+}
+
+
+@media screen and (max-width: 1600px) {
+    .movie_container {
+        grid-template-columns: repeat(5, auto);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .movie_container {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .movie_container {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .movie_container {
+        grid-template-columns: auto;
+    }
+}

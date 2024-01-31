@@ -4,9 +4,11 @@ export const AppContext = createContext();
 
 const AppContextProvider = ({children}) => {
   const [isDark, setIsDark] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   const appInfo = {
-    isDark, setIsDark
+    isDark, setIsDark,
+    isLoading, setIsLoading
   }
 
   return (
