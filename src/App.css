@@ -2,3 +2,27 @@
   margin: 0;
   padding: 0;
 }
+
+.app_container{
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.app{
+  max-width: 1560px;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+
+.dark{
+  background-color: #252525;
+  color: white;
+  transition: all ease-in-out 1s;
+}
+
+.light{
+  background-color: white;
+  color: #252525;
+  transition: all ease-in-out 1s;
+
+}
