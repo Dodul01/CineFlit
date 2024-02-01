@@ -1,0 +1,68 @@
+.bookings_container {
+    min-height: 75vh;
+    width: 100%;
+}
+
+.emptyPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    width: 100%;
+}
+
+.bookings_movie_container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+}
+
+.movie_bookingCard {
+    display: flex;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    height: fit-content;
+}
+
+.booking_movie_image {
+    height: 100px;
+    width: auto;
+}
+
+.clearbtn {
+    position: absolute;
+    bottom: 40px;
+    right: 50%;
+    background-color: #3664F4;
+    border: none;
+    outline: none;
+    padding:  15px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .bookings_movie_container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+
+    .movie_bookingCard {
+        display: flex;
+        gap: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        height: fit-content;
+    }
+
+    .clearbtn {
+        bottom: 70px;
+        right: 30%;
+    }
+
+}
