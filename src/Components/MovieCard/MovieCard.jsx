@@ -5,9 +5,9 @@ import './movieCard.css';
 const MovieCard = ({ movie }) => {
     return (
         <div className='movie_card'>
-            <img className="movie_poster" src={movie?.show?.image === null ? dummyImage : movie?.show?.image?.medium} alt="" />
+            <img className="movie_poster" src={movie?.show?.image === null ? dummyImage : movie?.show?.image?.medium} alt="movie_poster" />
             <p>{movie?.show?.name}</p>
-            <Link to={`/movieDetails/${movie.score}`}>Show Details</Link>
+            <Link to={`/movieDetails/${movie?.show?.name}`}>Show Details</Link>
         </div>
     )
 }
