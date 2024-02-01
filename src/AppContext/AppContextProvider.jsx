@@ -30,7 +30,7 @@ const AppContextProvider = ({ children }) => {
       localStorage.setItem('moviesReservation', JSON.stringify(storedData));
       return toast.success('Movie Ticket Booked Sucessfully')
     } else {
-      return toast.success('you have already booked this movie.')
+      return toast.error('you have already booked this movie.')
     }
   }
 
