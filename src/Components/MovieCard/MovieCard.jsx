@@ -7,7 +7,7 @@ const MovieCard = ({ movie }) => {
         <div className='movie_card'>
             <img className="movie_poster" src={movie?.show?.image === null ? dummyImage : movie?.show?.image?.medium} alt="movie_poster" />
             <p>{movie?.show?.name}</p>
-            <Link to={`/movieDetails/${movie?.show?.name}`}>Show Details</Link>
+            <Link className="book_btn" to={`/movieDetails/${movie?.show?.name}`}>Book Ticket</Link>
         </div>
     )
 }
