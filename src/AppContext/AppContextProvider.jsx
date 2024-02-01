@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from 'react'
+import toast from 'react-hot-toast';
 
 export const AppContext = createContext();
 
@@ -27,9 +28,9 @@ const AppContextProvider = ({ children }) => {
     if (!filterDuplicate) {
       storedData.push(movie);
       localStorage.setItem('moviesReservation', JSON.stringify(storedData));
-      return alert('Movie Ticket Booked Sucessfully')
+      return toast.success('Movie Ticket Booked Sucessfully')
     } else {
-      return alert('you have already booked this movie.')
+      return toast.success('you have already booked this movie.')
     }
   }
 

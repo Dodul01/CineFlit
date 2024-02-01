@@ -4,6 +4,7 @@ import Nav from './Components/Nav/Nav'
 import Footer from './Components/Footer/Footer'
 import { useContext } from 'react'
 import { AppContext } from './AppContext/AppContextProvider'
+import { Toaster } from 'react-hot-toast'
 
 const App = () => {
   const { isDark } = useContext(AppContext)
@@ -13,6 +14,7 @@ const App = () => {
       <div className='app'>
         <Nav />
         <Outlet />
+        <Toaster />
         <Footer />
       </div>
     </div>

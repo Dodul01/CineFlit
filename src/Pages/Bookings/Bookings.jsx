@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react"
 import { AppContext } from "../../AppContext/AppContextProvider"
 import dummyImage from '../../assets/dummyImage.png';
 import './bookings.css';
+import toast from "react-hot-toast";
 
 const Bookings = () => {
     const { bookings, setBookings, getDataFromLocalStorage } = useContext(AppContext);
@@ -14,6 +15,7 @@ const Bookings = () => {
     const handleClearBooking = () => {
         setBookings([]);
         localStorage.clear();
+        toast.success('Bookings Cleared Sucessfully.')
     }
 
 
